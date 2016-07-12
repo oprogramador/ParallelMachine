@@ -1,0 +1,4 @@
+NERD_tree_*
+*.swp
+*.swo
+node_modules
