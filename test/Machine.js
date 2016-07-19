@@ -22,9 +22,9 @@ describe('Machine', () => {
 
         it('obtains proper methods', () => {
             var dog = Machine.create(Dog);
-            expect(typeof dog.methods.IMover.go).to.equal('function');
-            expect(typeof dog.methods.IEater.eat).to.equal('function');
-            expect(typeof dog.methods.IEater.drink).to.equal('function');
+            expect(typeof dog.methods.IMover.go['function']).to.equal('function');
+            expect(typeof dog.methods.IEater.eat['function']).to.equal('function');
+            expect(typeof dog.methods.IEater.drink['function']).to.equal('function');
         });
     });
 });
