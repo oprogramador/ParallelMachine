@@ -8,23 +8,28 @@ module.exports = {
         IEater: IEater,
         IMover: IMover
     },
+    init: function() {
+        this.went = 0;
+        this.eaten = 0;
+        this.drunk = 0;
+    },
     methods: {
         IMover: {
             go: function(input, output) {
-                this.went += input.distance;
+                input['this'].went += input.amount;
                 output.send('this', this);
                 output.send('success', true);
             }
         },
         IEater: {
             eat: function(input, output) {
-                this.eaten += input.amount;
-                output.send('this', this);
+                input['this'].eaten += input.amount;
+                output.send('this', input['this']);
                 output.send('success', true);
             },
             drink: function(input, output) {
-                this.drunk += input.amount;
-                output.send('this', this);
+                input['this'].drunk += input.amount;
+                output.send('this', input['this']);
                 output.send('success', true);
             }
         }

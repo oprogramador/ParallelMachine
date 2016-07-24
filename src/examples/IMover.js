@@ -4,7 +4,7 @@ var IMover = {
     go: {
         input: {
             'this': {
-                type: IMover
+                type: 'this'
             },
             distance: {
                 type: Number
@@ -12,7 +12,7 @@ var IMover = {
         },
         output: {
             'this': {
-                type: IMover
+                type: 'this'
             },
             success: {
                 type: Boolean

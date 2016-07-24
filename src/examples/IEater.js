@@ -4,15 +4,15 @@ var IEater = {
     eat: {
         input: {
             'this': {
-                type: IEater
+                type: 'this'
             },
-            amount: {
+            amountToEat: {
                 type: Number
             }
         },
         output: {
             'this': {
-                type: IEater
+                type: 'this'
             },
             success: {
                 type: Boolean
@@ -22,15 +22,15 @@ var IEater = {
     drink: {
         input: {
             'this': {
-                type: IEater
+                type: 'this'
             },
-            amount: {
+            amountToDrink: {
                 type: Number
             }
         },
         output: {
             'this': {
-                type: IEater
+                type: 'this'
             },
             success: {
                 type: Boolean
