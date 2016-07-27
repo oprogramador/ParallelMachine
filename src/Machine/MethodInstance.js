@@ -15,6 +15,11 @@ module.exports = class {
         that.isCalled = false;
     }
 
+    getOutput() {
+        var that = privateProperties.get(this);
+        return that.output;
+    }
+
     addParameter(name, value) {
         var that = privateProperties.get(this);
         that.passedParametersNr++;
